@@ -9,9 +9,9 @@ public class RentalService {
     private double pricePerHour;
     private double pricePerDay;
 
-    private BrazilTaxService taxService;
+    private TaxService taxService;
 
-    public RentalService(double pricePerHour, double pricePerDay, BrazilTaxService taxService) {
+    public RentalService(double pricePerDay, double pricePerHour, TaxService taxService) {
         this.pricePerHour = pricePerHour;
         this.pricePerDay = pricePerDay;
         this.taxService = taxService;
